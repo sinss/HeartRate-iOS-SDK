@@ -132,7 +132,7 @@
 				TargetAttributes = {
 					5C78DF511DFB0F0C00B15AD8 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 276SVSFC7J;
+						DevelopmentTeam = NXL842KT4A;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -142,6 +142,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -309,7 +310,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 276SVSFC7J;
+				DEVELOPMENT_TEAM = NXL842KT4A;
 				INFOPLIST_FILE = PulseDetector/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -325,7 +326,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 276SVSFC7J;
+				DEVELOPMENT_TEAM = NXL842KT4A;
 				INFOPLIST_FILE = PulseDetector/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (

@@ -85,3 +85,6 @@ xcuserdata/
 !*.xcodeproj/xcshareddata/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
+PulseDetector/PulseDetector.xcodeproj/project.xcworkspace/xcshareddata/
+
+Source/SampleHeartRateApp/SampleHeartRateApp.xcodeproj/project.xcworkspace/xcshareddata/

@@ -6,7 +6,7 @@
 #import "HeartRateKitResult+Protected.h"
 #import "UIView+HeartRateKit.h"
 
-#define kShouldAbortAfterSeconds 20
+#define kShouldAbortAfterSeconds 10
 #define kTimeToDetermineBPMFinalResultInSeconds 20
 
 static const NSUInteger HRKLabelFontSize = 14;
@@ -78,6 +78,7 @@ static const CGFloat HRKLabelToLabelTopPadding = 8.0;
     dispatch_queue_t sessionQ = dispatch_queue_create("start running session thread", NULL);
     
     dispatch_async(sessionQ, ^{
+        [self.session startRunning];
         // turn flash on
         if ([self.videoDevice hasTorch] && [self.videoDevice hasFlash]){
             [self.videoDevice lockForConfiguration:nil];
@@ -92,7 +93,6 @@ static const CGFloat HRKLabelToLabelTopPadding = 8.0;
             
             [self.videoDevice unlockForConfiguration];
         }
-        [self.session startRunning];
     });
 }
 
@@ -319,7 +319,7 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
                 self.bpmFinalResultFirstTimeDetected = nil;
             }
             
-            if (red < 210) {
+            if (red < 100) {
                 //finger isn't on camera
                 
                 if (kShouldAbortAfterSeconds > 0) {
